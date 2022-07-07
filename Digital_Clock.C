@@ -20,7 +20,7 @@ https://fsymbols.com/generators/carty/
 #include <stdlib.h>
 #include <string.h>
 
-int show(int,int,int,int,int,int);
+void show(int,int,int,int,int,int);
 
 int main()
 {
@@ -44,7 +44,7 @@ int main()
                         
     while(1)
     {
-        system("cls");
+        system("clear");
          
         hour_first = hour / 10;
         hour_last = hour % 10;
@@ -82,7 +82,7 @@ int main()
  
     return 0;
 }
-int show(int hfirst,int hlast,int mfirst, int mlast, int sfirst, int slast)
+void show(int hfirst,int hlast,int mfirst, int mlast, int sfirst, int slast)
 {   
 
 
@@ -99,7 +99,7 @@ int show(int hfirst,int hlast,int mfirst, int mlast, int sfirst, int slast)
                         };
 
     const char* a0[8][12] =   {
-                            {" "," ",".","d","8","8","8","8","b",".",""," "},
+                            {" "," ",".","d","8","8","8","8","b","."," "," "},
                             {" ","d","8","8","P"," "," ","Y","8","8","b"," "},
                             {" ","8","8","8"," "," "," "," ","8","8","8"," "},
                             {" ","8","8","8"," "," "," "," ","8","8","8"," "},
